@@ -1,0 +1,8 @@
+Future Changes required to the existing code:
+
+Configure dns name to route the traffic through Elastic Load Balancing
+Currently node Js application is running with port 3000. 
+Apache Webserver is running with default port 80.
+Stop the process which is occupied port 80 first. 
+sudo fuser -k 80/tcp
+start node js with port 80
